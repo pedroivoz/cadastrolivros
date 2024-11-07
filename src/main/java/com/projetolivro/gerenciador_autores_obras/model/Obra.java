@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
 public class Obra {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +29,7 @@ public class Obra {
     @JoinTable (
             name = "autor_obra",
             joinColumns = @JoinColumn(name="obra_id"),
-            inverseJoinColumns = @JoinColumn(name="autor _id")
+            inverseJoinColumns = @JoinColumn(name="autor_id")
     )
     private Set<Autor> autores= new HashSet<>();
 
