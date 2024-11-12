@@ -18,6 +18,7 @@ public class Autor {
 
     @NotBlank(message = "Nome é obrigatório")
     private String nome;
+
     private  String sexo;
 
     @Email(message = "E-mail deve ser válido")
