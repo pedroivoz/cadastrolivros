@@ -15,7 +15,7 @@ public class Obra {
 
     @NotBlank(message = "Nome é obrigatório")
     private String nome;
-    private String sexo;
+
 
     @NotBlank(message = "Descrição é obrigatória")
     @Size(max = 240, message="Descrição deve conter no máximo 240 caracteres")
@@ -39,14 +39,6 @@ public class Obra {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
     }
 
     public @NotBlank(message = "Nome é obrigatório") String getNome() {
